@@ -30,3 +30,52 @@
 	path = repos/r4
 	url = ../r4
 	branch = main
+[submodule "repos/ruis"]
+	path = repos/ruis
+	url = ../ruis
+	branch = main
+[submodule "repos/ruisapp"]
+	path = repos/ruisapp
+	url = ../ruisapp
+	branch = main
+[submodule "repos/ruis-render-null"]
+	path = repos/ruis-render-null
+	url = ../ruis-render-null
+	branch = main
+[submodule "repos/ruis-render-opengl"]
+	path = repos/ruis-render-opengl
+	url = ../ruis-render-opengl
+	branch = main
+[submodule "repos/ruis-render-opengles"]
+	path = repos/ruis-render-opengles
+	url = ../ruis-render-opengles
+	branch = main
+[submodule "repos/cssom"]
+	path = repos/cssom
+	url = ../cssom
+	branch = main
+[submodule "repos/mikroxml"]
+	path = repos/mikroxml
+	url = ../mikroxml
+	branch = main
+[submodule "repos/svgdom"]
+	path = repos/svgdom
+	url = ../svgdom
+	branch = main
+[submodule "repos/svgren"]
+	path = repos/svgren
+	url = ../svgren
+	branch = main
+[submodule "repos/veg"]
+	path = repos/veg
+	url = ../veg
+	branch = main
+[submodule "repos/agg"]
+	path = repos/agg
+	url = ../agg
+	branch = main
+[submodule "repos/rasterimage"]
+	path = repos/rasterimage
+	url = ../rasterimage
+	branch = main
+
