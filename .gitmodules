@@ -6,3 +6,27 @@
 	path = repos/papki
 	url = ../papki
 	branch = main
+[submodule "repos/myci"]
+	path = repos/myci
+	url = ../myci
+	branch = main
+[submodule "repos/opros"]
+	path = repos/opros
+	url = ../opros
+	branch = main
+[submodule "repos/nitki"]
+	path = repos/nitki
+	url = ../nitki
+	branch = main
+[submodule "repos/clargs"]
+	path = repos/clargs
+	url = ../clargs
+	branch = main
+[submodule "repos/tst"]
+	path = repos/tst
+	url = ../tst
+	branch = main
+[submodule "repos/r4"]
+	path = repos/r4
+	url = ../r4
+	branch = main
