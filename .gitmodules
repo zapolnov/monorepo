@@ -78,4 +78,11 @@
 	path = repos/rasterimage
 	url = ../rasterimage
 	branch = main
-
+[submodule "repos/jsondom"]
+	path = repos/jsondom
+	url = ../jsondom
+	branch = main
+[submodule "repos/tml"]
+	path = repos/tml
+	url = ../tml
+	branch = main
