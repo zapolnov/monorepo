@@ -1,0 +1,8 @@
+[submodule "repos/utki"]
+	path = repos/utki
+	url = ../utki
+	branch = main
+[submodule "repos/papki"]
+	path = repos/papki
+	url = ../papki
+	branch = main
