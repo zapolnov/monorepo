@@ -15,3 +15,4 @@ endmacro()
 
 add_subdir(utki)
 add_subdir(papki)
+add_subdir(cssom)
