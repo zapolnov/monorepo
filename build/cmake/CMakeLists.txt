@@ -10,6 +10,8 @@ set(MYCI_GLOBAL_DISABLE_INSTALL TRUE)
 
 macro(add_subdir name)
     add_subdirectory(../../repos/${name}/build/cmake ${name})
+    add_library(${name}::${name} ALIAS ${name})
 endmacro()
 
 add_subdir(utki)
+add_subdir(papki)

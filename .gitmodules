@@ -1,88 +1,88 @@
 [submodule "repos/utki"]
 	path = repos/utki
 	url = ../utki
-	branch = main
+	branch = latest
 [submodule "repos/papki"]
 	path = repos/papki
 	url = ../papki
-	branch = main
+	branch = latest
 [submodule "repos/myci"]
 	path = repos/myci
 	url = ../myci
-	branch = main
+	branch = latest
 [submodule "repos/opros"]
 	path = repos/opros
 	url = ../opros
-	branch = main
+	branch = latest
 [submodule "repos/nitki"]
 	path = repos/nitki
 	url = ../nitki
-	branch = main
+	branch = latest
 [submodule "repos/clargs"]
 	path = repos/clargs
 	url = ../clargs
-	branch = main
+	branch = latest
 [submodule "repos/tst"]
 	path = repos/tst
 	url = ../tst
-	branch = main
+	branch = latest
 [submodule "repos/r4"]
 	path = repos/r4
 	url = ../r4
-	branch = main
+	branch = latest
 [submodule "repos/ruis"]
 	path = repos/ruis
 	url = ../ruis
-	branch = main
+	branch = latest
 [submodule "repos/ruisapp"]
 	path = repos/ruisapp
 	url = ../ruisapp
-	branch = main
+	branch = latest
 [submodule "repos/ruis-render-null"]
 	path = repos/ruis-render-null
 	url = ../ruis-render-null
-	branch = main
+	branch = latest
 [submodule "repos/ruis-render-opengl"]
 	path = repos/ruis-render-opengl
 	url = ../ruis-render-opengl
-	branch = main
+	branch = latest
 [submodule "repos/ruis-render-opengles"]
 	path = repos/ruis-render-opengles
 	url = ../ruis-render-opengles
-	branch = main
+	branch = latest
 [submodule "repos/cssom"]
 	path = repos/cssom
 	url = ../cssom
-	branch = main
+	branch = latest
 [submodule "repos/mikroxml"]
 	path = repos/mikroxml
 	url = ../mikroxml
-	branch = main
+	branch = latest
 [submodule "repos/svgdom"]
 	path = repos/svgdom
 	url = ../svgdom
-	branch = main
+	branch = latest
 [submodule "repos/svgren"]
 	path = repos/svgren
 	url = ../svgren
-	branch = main
+	branch = latest
 [submodule "repos/veg"]
 	path = repos/veg
 	url = ../veg
-	branch = main
+	branch = latest
 [submodule "repos/agg"]
 	path = repos/agg
 	url = ../agg
-	branch = main
+	branch = latest
 [submodule "repos/rasterimage"]
 	path = repos/rasterimage
 	url = ../rasterimage
-	branch = main
+	branch = latest
 [submodule "repos/jsondom"]
 	path = repos/jsondom
 	url = ../jsondom
-	branch = main
+	branch = latest
 [submodule "repos/tml"]
 	path = repos/tml
 	url = ../tml
-	branch = main
+	branch = latest
