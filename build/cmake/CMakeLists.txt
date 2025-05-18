@@ -1,5 +1,9 @@
 cmake_minimum_required(VERSION 3.20)
 
+# This is umbrella CMakeLists.txt for all subrepos of the monorepo.
+
+set(CMAKE_TOOLCHAIN_FILE $ENV{VCPKG_ROOT}/scripts/buildsystems/vcpkg.cmake)
+
 # Set myci config directory for find_package(myci). The path has to be absolute.
 set(myci_DIR ../../repos/myci/src/cmake)
 cmake_path(ABSOLUTE_PATH myci_DIR NORMALIZE)
@@ -27,3 +31,6 @@ add_subdir(svgdom)
 add_subdir(agg)
 add_subdir(rasterimage)
 add_subdir(veg)
+add_subdir(svgren)
+add_subdir(tml)
+add_subdir(ruis)
