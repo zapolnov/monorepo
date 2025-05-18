@@ -1,5 +1,8 @@
 {
     "dependencies": [
-        "freetype"
+        "freetype",
+        "libjpeg-turbo",
+        "libpng",
+        "glew"
     ]
 }
