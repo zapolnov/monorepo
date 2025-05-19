@@ -12,10 +12,22 @@ project(cppfw)
 
 set(MYCI_GLOBAL_DISABLE_INSTALL TRUE)
 
-macro(add_subdir name)
+function(add_subdir name)
+    set(options)
+    set(single)
+    set(multiple VARIANTS)
+    cmake_parse_arguments(arg "${options}" "${single}" "${multiple}" ${ARGN})
+
     add_subdirectory(../../repos/${name}/build/cmake ${name})
-    add_library(${name}::${name} ALIAS ${name})
-endmacro()
+
+    if(arg_VARIANTS)
+        foreach(var ${arg_VARIANTS})
+            add_library(${name}::${name}-${var} ALIAS ${name}-${var})
+        endforeach()
+    else()
+        add_library(${name}::${name} ALIAS ${name})
+    endif()
+endfunction()
 
 add_subdir(utki)
 add_subdir(papki)
@@ -37,3 +49,8 @@ add_subdir(ruis)
 add_subdir(ruis-render-null)
 add_subdir(ruis-render-opengl)
 add_subdir(ruis-render-opengles)
+add_subdir(ruisapp
+    VARIANTS
+        opengl
+        # opengles
+)
