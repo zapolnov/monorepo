@@ -49,8 +49,8 @@ add_subdir(ruis)
 add_subdir(ruis-render-null)
 add_subdir(ruis-render-opengl)
 add_subdir(ruis-render-opengles)
-add_subdir(ruisapp
-    VARIANTS
-        opengl
-        # opengles
-)
+# add_subdir(ruisapp
+#     VARIANTS
+#         opengl
+#         # opengles
+# )
