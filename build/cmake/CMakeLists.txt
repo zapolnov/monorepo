@@ -10,7 +10,7 @@ cmake_path(ABSOLUTE_PATH myci_DIR NORMALIZE)
 
 project(cppfw)
 
-set(MYCI_GLOBAL_DISABLE_INSTALL TRUE)
+# set(MYCI_GLOBAL_DISABLE_INSTALL TRUE)
 
 function(add_subdir name)
     set(options)
