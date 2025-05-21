@@ -20,6 +20,7 @@ function(add_subdir name)
 
     add_subdirectory(../../repos/${name}/build/cmake ${name})
 
+    # TODO: declare alias right in delare_library()?
     if(arg_VARIANTS)
         foreach(var ${arg_VARIANTS})
             add_library(${name}::${name}-${var} ALIAS ${name}-${var})
@@ -49,8 +50,8 @@ add_subdir(ruis)
 add_subdir(ruis-render-null)
 add_subdir(ruis-render-opengl)
 add_subdir(ruis-render-opengles)
-# add_subdir(ruisapp
-#     VARIANTS
-#         opengl
-#         # opengles
-# )
+add_subdir(ruisapp
+    VARIANTS
+        opengl
+        opengles
+)
