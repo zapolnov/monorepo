@@ -1,7 +1,7 @@
 = monorepo for cppfw libraries
 
 **cppfw** libraries repositories are added as submodules under the `repos/` directory.
-The submodules are configuret to `latest` remote branch. So updating the submodules with:
+The submodules are configured to `latest` remote branch. So updating the submodules with:
 ```
 git submodule update --remote --init
 ```
