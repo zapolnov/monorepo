@@ -2,6 +2,10 @@ cmake_minimum_required(VERSION 3.20)
 
 # This is umbrella CMakeLists.txt for all subrepos of the monorepo.
 
+if(NOT DEFINED ENV{VCPKG_ROOT})
+    message(FATAL_ERROR "VCPKG_ROOT is not set")
+endif()
+
 set(CMAKE_TOOLCHAIN_FILE $ENV{VCPKG_ROOT}/scripts/buildsystems/vcpkg.cmake)
 
 # Set myci config directory for find_package(myci). The path has to be absolute.

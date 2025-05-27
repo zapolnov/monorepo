@@ -1,3 +1,21 @@
 = monorepo for cppfw libraries
 
-TODO:
+**cppfw** libraries repositories are added as submodules under the `repos/` directory.
+The submodules are configuret to `latest` remote branch. So updating the submodules with:
+```
+git submodule update --remote --init
+```
+Will always sync to latest release versions of the libraries.
+
+== Building with CMake
+
+First, make sure you have the link:https://vcpkg.io[VCPKG] installed and `VCPKG_ROOT` environment variable set accordingly.
+
+Then:
+```
+cd build/cmake
+cmake .
+cmake --build . --parallel
+```
+
+Test applications binaries will be put to `build/cmake/out` directory.
