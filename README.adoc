@@ -19,3 +19,9 @@ cmake --build . --parallel
 ```
 
 Test applications binaries will be put to `build/cmake/out` directory.
+
+On Windows one can use the provided command scripts:
+
+* `msvc2022_gen.cmd` - fetches submodules, installs vcpkg and generates Microsoft Visual Studio 2022 project
+* `msvc2022_build.cmd` - generates Microsoft Visual Studio 2022 project and builds Release target
+* `msvc2022_open.cmd` - generates Microsoft Visual Studio 2022 and opens it in the IDE
