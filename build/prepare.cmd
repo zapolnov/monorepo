@@ -10,10 +10,10 @@ git submodule update --init --recursive || exit /B 1
 
 rem -- Download and bootstrap VCPKG
 
-if exist "%dir%build\vcpkg\vcpkg.exe" goto skipvcpkg
-if exist "%dir%build\vcpkg" goto skipclone
-git clone --depth=1 https://github.com/microsoft/vcpkg.git "%dir%build\vcpkg" || exit /B 1
+if exist "%dir%out\vcpkg\vcpkg.exe" goto skipvcpkg
+if exist "%dir%out\vcpkg" goto skipclone
+git clone --depth=1 https://github.com/microsoft/vcpkg.git "%dir%out\vcpkg" || exit /B 1
 :skipclone
-cd "%dir%build\vcpkg" || exit /B 1
+cd "%dir%out\vcpkg" || exit /B 1
 call bootstrap-vcpkg.bat || exit /B 1
 :skipvcpkg
