@@ -13,15 +13,23 @@ First, make sure you have the link:https://vcpkg.io[VCPKG] installed and `VCPKG_
 
 Then:
 ```
-cd build/cmake
-cmake .
+mkdir out
+cd out
+cmake ../build/cmake
 cmake --build . --parallel
 ```
 
-Test applications binaries will be put to `build/cmake/out` directory.
+Test applications binaries will be put to `out/out` directory.
+
+=== Building on Windows
 
 On Windows one can use the provided command scripts:
 
 * `msvc2022_gen.cmd` - fetches submodules, installs vcpkg and generates Microsoft Visual Studio 2022 project
 * `msvc2022_build.cmd` - generates Microsoft Visual Studio 2022 project and builds Release target
 * `msvc2022_open.cmd` - generates Microsoft Visual Studio 2022 and opens it in the IDE
+
+=== Adding your own projects
+
+You can create your own applications inside `apps` subdirectory. Make sure to have your CMakeLists.txt inside
+`apps/<your_app_name>/build/cmake` directory and build scripts will add it to the project automatically.
