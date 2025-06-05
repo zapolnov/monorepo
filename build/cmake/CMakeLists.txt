@@ -63,7 +63,6 @@ file(GLOB apps
 
 foreach(app ${apps})
     set(dir "${apps_dir}/${app}/build/cmake")
-    message(STATUS "${dir}")
     if (IS_DIRECTORY "${dir}")
         add_subdirectory("${dir}" "apps/${app}")
     endif()
