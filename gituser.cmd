@@ -4,6 +4,10 @@ cd "%~dp0" || exit /B 1
 git config user.name "Nikolay Zapolnov" || exit /B 1
 git config user.email "zapolnov@gmail.com" || exit /B 1
 
+cd "%~dp0apps\carcockpit" || exit /B 1
+git config user.name "Nikolay Zapolnov" || exit /B 1
+git config user.email "zapolnov@gmail.com" || exit /B 1
+
 cd "%~dp0repos\agg" || exit /B 1
 git config user.name "Nikolay Zapolnov" || exit /B 1
 git config user.email "zapolnov@gmail.com" || exit /B 1
