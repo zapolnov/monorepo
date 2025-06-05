@@ -52,3 +52,19 @@ add_subdir(ruis-render-null)
 add_subdir(ruis-render-opengl)
 add_subdir(ruis-render-opengles)
 add_subdir(ruisapp)
+
+set(apps_dir "${CMAKE_CURRENT_SOURCE_DIR}/../../apps")
+file(GLOB apps
+    LIST_DIRECTORIES TRUE
+    RELATIVE "${apps_dir}"
+    CONFIGURE_DEPENDS
+    "${apps_dir}/*"
+)
+
+foreach(app ${apps})
+    set(dir "${apps_dir}/${app}/build/cmake")
+    message(STATUS "${dir}")
+    if (IS_DIRECTORY "${dir}")
+        add_subdirectory("${dir}" "apps/${app}")
+    endif()
+endforeach()
