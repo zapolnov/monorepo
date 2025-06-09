@@ -19,7 +19,7 @@ cmake ../build/cmake
 cmake --build . --parallel
 ```
 
-Test applications binaries will be put to `out/out` directory.
+Test applications binaries will be put to `out/exe` directory.
 
 === Building on Windows
 
