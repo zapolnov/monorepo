@@ -11,7 +11,7 @@ Will always sync to latest release versions of the libraries.
 
 === Prerequisites
 
-- link:https://vcpkg.io[VCPKG] installed and `VCPKG_ROOT` environment variable set accordingly.
+- link:https://vcpkg.io[VCPKG] installed and `VCPKG_ROOT` environment variable set accordingly
 - **Linux:** `pkg-config`, `zip`, `libgl1-mesa-dev`, `libgtk-3-dev` installed
 +
 ```
