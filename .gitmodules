@@ -86,3 +86,6 @@
 	path = repos/tml
 	url = ../tml
 	branch = latest
+[submodule "apps/carcockpit"]
+	path = apps/carcockpit
+	url = git@github.com:zapolnov/carcockpit
