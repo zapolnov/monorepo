@@ -1,12 +1,18 @@
 @echo off
 
+git submodule update --init --recursive
+
+cd "%~dp0" || exit /B 1
+git checkout main || exit /B 1
+git remote add upstream git@github.com:cppfw/monorepo
+
+cd "%~dp0apps\carcockpit" || exit /B 1
+git checkout main || exit /B 1
+git remote add upstream git@github.com:gagistech/carcockpit
+
 cd "%~dp0repos\agg" || exit /B 1
 git checkout main || exit /B 1
 git remote add upstream git@github.com:cppfw/agg
-
-rem cd "%~dp0repos\carcockpit" || exit /B 1
-rem git checkout main || exit /B 1
-rem git remote add upstream git@github.com:gagistech/carcockpit
 
 cd "%~dp0repos\clargs" || exit /B 1
 git checkout main || exit /B 1
@@ -91,7 +97,3 @@ git remote add upstream git@github.com:cppfw/utki
 cd "%~dp0repos\veg" || exit /B 1
 git checkout main || exit /B 1
 git remote add upstream git@github.com:cppfw/veg
-
-cd "%~dp0" || exit /B 1
-git checkout main || exit /B 1
-git remote add upstream git@github.com:cppfw/monorepo

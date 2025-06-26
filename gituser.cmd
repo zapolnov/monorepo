@@ -12,10 +12,6 @@ cd "%~dp0repos\agg" || exit /B 1
 git config user.name "Nikolay Zapolnov" || exit /B 1
 git config user.email "zapolnov@gmail.com" || exit /B 1
 
-rem cd "%~dp0repos\carcockpit" || exit /B 1
-rem git config user.name "Nikolay Zapolnov" || exit /B 1
-rem git config user.email "zapolnov@gmail.com" || exit /B 1
-
 cd "%~dp0repos\clargs" || exit /B 1
 git config user.name "Nikolay Zapolnov" || exit /B 1
 git config user.email "zapolnov@gmail.com" || exit /B 1
