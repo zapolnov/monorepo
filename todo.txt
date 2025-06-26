@@ -1,0 +1,23 @@
+Переделать на создание отдельного инстанса анимаций и коллбеки!!
+Как правильно просунуть updater в play_animation?
+использование отдельного animation на каждую анимацию создает проблемы (поддержка списка в gltf через weak_ptr, нарушение уровней зависимости)
+Переименование в gltf_node и т.п.
+дубликат списка нодов в классе gltf
+forward не отыгрывает последний кадр анимации (анимация может не дойти до 1.0, полноценный looping реализовать сложно)
+некрасивая связка нодов и класса gltf (геттер в классе gltf) - ввести дополнительный уровень абстракции?
+слетает cmake на повторной перегенерации
+
+1>CMake Error at D:/Work/monorepo/out/msvc2022/utki/utki-config.cmake:7 (include):
+1>  include could not find requested file:
+1>
+1>    D:/Work/monorepo/out/msvc2022/utki/utki-targets.cmake
+1>Call Stack (most recent call first):
+1>  D:/Work/monorepo/out/vcpkg/scripts/buildsystems/vcpkg.cmake:893 (_find_package)
+1>  D:/Work/monorepo/repos/myci/src/cmake/modules/myci.cmake:38 (find_package)
+1>  D:/Work/monorepo/repos/myci/src/cmake/modules/myci.cmake:593 (myci_private_find_package)
+1>  D:/Work/monorepo/repos/myci/src/cmake/modules/myci.cmake:685 (myci_private_write_find_packages_to_config_file)
+1>  D:/Work/monorepo/repos/myci/src/cmake/modules/myci.cmake:779 (myci_private_generate_config_file)
+1>  D:/Work/monorepo/repos/myci/src/cmake/modules/myci.cmake:952 (myci_export)
+1>  D:/Work/monorepo/repos/papki/build/cmake/CMakeLists.txt:24 (myci_declare_library)
+1>
+1>
